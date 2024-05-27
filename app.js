@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 const express=require('express')
 const app=express()
 const fs = require('fs');
@@ -12,7 +12,7 @@ const { ApplicationCostProfiler } = require('aws-sdk');
 const { nextTick } = require('process');
 const PORT = 3000;
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const userData=[
     {
@@ -72,7 +72,7 @@ app.post('/login',(req,res)=>{
     const email=req.body.email
     const password=req.body.password
     const user = userData.find(user => user.email === email)
-    const secret=process.env.SECRET_KEY
+    //const secret=process.env.SECRET_KEY
     if(user){
         var isPasswordValid = bcrypt.compareSync(password, user.password);
         if(isPasswordValid){
