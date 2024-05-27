@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "name": "Rakshitha",
+      "Id": 90876,
+      "userName": "rakshitha@gmail.com",
+      "password": 3,
+      "preferences": "Technical"
+    },
+    {
+      "name": "Ashritha",
+      "Id": 90876,
+      "userName": "ashritha@gmail.com",
+      "password": 3,
+      "preferences": "Technical"
+    }
+  ]
+}
